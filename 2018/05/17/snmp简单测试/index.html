@@ -3,22 +3,26 @@
 <head>
   <meta charset="utf-8">
   
-  <title>about | TIN</title>
+  <title>snmp简单测试 | TIN</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
     <meta name="keywords" content="TIN's Blog" />
   
-  <meta name="description" content="此模块和评论任正在建设中….">
-<meta property="og:type" content="website">
-<meta property="og:title" content="about">
-<meta property="og:url" content="http://dycsy.cn/about/index.html">
+  <meta name="description" content="一、环境搭建搜索windows Server2003安装配置snmp 服务,按照提示来就行 二、利用1.找出Coummunity Strings利用于 auxiliary/scanner/snmp/snmp_login 12345use auxiliary/scanner/snmp/snmp_loginset rhosts 192.168.131.128set STOP_ON_SUCCESS tr">
+<meta name="keywords" content="snmp,网络管理">
+<meta property="og:type" content="article">
+<meta property="og:title" content="snmp简单测试">
+<meta property="og:url" content="http://dycsy.cn/2018/05/17/snmp简单测试/index.html">
 <meta property="og:site_name" content="TIN">
-<meta property="og:description" content="此模块和评论任正在建设中….">
+<meta property="og:description" content="一、环境搭建搜索windows Server2003安装配置snmp 服务,按照提示来就行 二、利用1.找出Coummunity Strings利用于 auxiliary/scanner/snmp/snmp_login 12345use auxiliary/scanner/snmp/snmp_loginset rhosts 192.168.131.128set STOP_ON_SUCCESS tr">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-05-18T08:38:38.841Z">
+<meta property="og:image" content="https://images2018.cnblogs.com/blog/1121221/201805/1121221-20180518170353177-1515388793.png">
+<meta property="og:image" content="https://images2018.cnblogs.com/blog/1121221/201805/1121221-20180518171117379-1503391174.png">
+<meta property="og:updated_time" content="2018-05-18T09:20:33.888Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="about">
-<meta name="twitter:description" content="此模块和评论任正在建设中….">
+<meta name="twitter:title" content="snmp简单测试">
+<meta name="twitter:description" content="一、环境搭建搜索windows Server2003安装配置snmp 服务,按照提示来就行 二、利用1.找出Coummunity Strings利用于 auxiliary/scanner/snmp/snmp_login 12345use auxiliary/scanner/snmp/snmp_loginset rhosts 192.168.131.128set STOP_ON_SUCCESS tr">
+<meta name="twitter:image" content="https://images2018.cnblogs.com/blog/1121221/201805/1121221-20180518170353177-1515388793.png">
   
   
     <link rel="icon" href="/favicon.ico">
@@ -119,20 +123,27 @@
     </div>
 </header>
       <div class="outer">
-        <section id="main" class="body-wrap"><article id="page-" class="article article-type-page" itemscope itemprop="blogPost">
+        <section id="main" class="body-wrap"><article id="post-snmp简单测试" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="post-title" itemprop="name">
-      about
+      snmp简单测试
     </h1>
     <div class="post-title-bar">
       <ul>
           
+              <li>
+                  <i class="fa fa-book"></i>
+                  
+                      <a href="/categories/网络管理/">网络管理</a>
+                  
+              </li>
+          
         <li>
-          <i class="fa fa-calendar"></i>  2018-05-15
+          <i class="fa fa-calendar"></i>  2018-05-17
         </li>
         <li>
           <i class="fa fa-eye"></i>
@@ -145,14 +156,23 @@
           
       </header>
     
-    <div class="article-entry " itemprop="articleBody">
+    <div class="article-entry post-content" itemprop="articleBody">
       
             
-            <h3 id="此模块和评论任正在建设中…"><a href="#此模块和评论任正在建设中…" class="headerlink" title="此模块和评论任正在建设中…."></a>此模块和评论任正在建设中….</h3>
+            <h3 id="一、环境搭建"><a href="#一、环境搭建" class="headerlink" title="一、环境搭建"></a>一、环境搭建</h3><p>搜索<code>windows Server2003安装配置snmp 服务</code>,按照提示来就行</p>
+<h3 id="二、利用"><a href="#二、利用" class="headerlink" title="二、利用"></a>二、利用</h3><h4 id="1-找出Coummunity-Strings"><a href="#1-找出Coummunity-Strings" class="headerlink" title="1.找出Coummunity Strings"></a>1.找出<code>Coummunity Strings</code></h4><p>利用于 auxiliary/scanner/snmp/snmp_login</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">use auxiliary/scanner/snmp/snmp_login</span><br><span class="line">set rhosts 192.168.131.128</span><br><span class="line">set STOP_ON_SUCCESS true</span><br><span class="line">set threads 15</span><br><span class="line">run</span><br></pre></td></tr></table></figure>
+<p><img src="https://images2018.cnblogs.com/blog/1121221/201805/1121221-20180518170353177-1515388793.png" alt=""></p>
+<p><a href="https://files.cnblogs.com/files/dycsy/snmptuil.zip" target="_blank" rel="noopener">snmptuil软件下载</a></p>
+<p>在dos命令行下打开snmptuil开始刺探信息</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">snmputil walk 对方ip public .1.3.6.1.2.1.25.4.2.1.2 列出系统进程</span><br><span class="line">snmputil walk 对方ip public .1.3.6.1.4.1.77.1.2.25.1.1 列系统用户列表</span><br><span class="line">snmputil get 对方ip public .1.3.6.1.4.1.77.1.4.1.0 列出域名</span><br><span class="line">snmputil walk 对方ip public .1.3.6.1.2.1.25.6.3.1.2 列出安装的软件</span><br><span class="line">snmputil walk 对方ip public .1.3.6.1.2.1.1 列出系统信息</span><br></pre></td></tr></table></figure>
+<p>使用<code>snmputil walk 192.168.131.128 public .1.3.6.1.4.1.77.1.2.25.1.1</code><br>可以看到有个test的用户，用nmap扫描可以发现靶机开了3389，尝试弱口令登录<br><img src="https://images2018.cnblogs.com/blog/1121221/201805/1121221-20180518171117379-1503391174.png" alt=""></p>
+<h3 id="三、参考链接"><a href="#三、参考链接" class="headerlink" title="三、参考链接"></a>三、参考链接</h3><p><a href="http://www.freebuf.com/column/144144.html" target="_blank" rel="noopener">http://www.freebuf.com/column/144144.html</a></p>
+
             <div class="post-copyright">
     <div class="content">
-        <p>最后更新： 2018年05月18日 16:38</p>
-        <p>原始链接： <a class="post-url" href="/about/index.html" title="about">http://dycsy.cn/about/index.html</a></p>
+        <p>最后更新： 2018年05月18日 17:20</p>
+        <p>原始链接： <a class="post-url" href="/2018/05/17/snmp简单测试/" title="snmp简单测试">http://dycsy.cn/2018/05/17/snmp简单测试/</a></p>
         <footer>
             <a href="http://dycsy.cn">
                 <img src="/images/logo.png" alt="TIN">
@@ -209,7 +229,7 @@
     <div class="post-share-list" id="share-list">
         <ul class="share-icons">
           <li>
-            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://dycsy.cn/about/&title=《about》 — TIN&pic=http://dycsy.cnimages/logo.png" data-title="微博">
+            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://dycsy.cn/2018/05/17/snmp简单测试/&title=《snmp简单测试》 — TIN&pic=http://pic1.win4000.com/wallpaper/4/59bb77daf3cbd.jpg" data-title="微博">
               <i class="fa fa-weibo"></i>
             </a>
           </li>
@@ -219,22 +239,22 @@
             </a>
           </li>
           <li>
-            <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://dycsy.cn/about/&title=《about》 — TIN&source=" data-title="QQ">
+            <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://dycsy.cn/2018/05/17/snmp简单测试/&title=《snmp简单测试》 — TIN&source=" data-title="QQ">
               <i class="fa fa-qq"></i>
             </a>
           </li>
           <li>
-            <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://dycsy.cn/about/" data-title="Facebook">
+            <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://dycsy.cn/2018/05/17/snmp简单测试/" data-title="Facebook">
               <i class="fa fa-facebook"></i>
             </a>
           </li>
           <li>
-            <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《about》 — TIN&url=http://dycsy.cn/about/&via=http://dycsy.cn" data-title="Twitter">
+            <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《snmp简单测试》 — TIN&url=http://dycsy.cn/2018/05/17/snmp简单测试/&via=http://dycsy.cn" data-title="Twitter">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
           <li>
-            <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://dycsy.cn/about/" data-title="Google+">
+            <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://dycsy.cn/2018/05/17/snmp简单测试/" data-title="Google+">
               <i class="fa fa-google-plus"></i>
             </a>
           </li>
@@ -244,7 +264,7 @@
 <div class="post-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;" id="wxShare-close">×</a>
     <p>扫一扫，分享到微信</p>
-    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://dycsy.cn/about/" alt="微信分享二维码">
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://dycsy.cn/2018/05/17/snmp简单测试/" alt="微信分享二维码">
 </div>
 
 <div class="mask"></div>
@@ -253,6 +273,15 @@
         <ul class="article-footer-menu">
             
             
+  <li class="article-footer-tags">
+    <i class="fa fa-tags"></i>
+      
+    <a href="/tags/snmp/" class="color5">snmp</a>
+      
+    <a href="/tags/网络管理/" class="color5">网络管理</a>
+      
+  </li>
+
         </ul>
         
     </footer>
@@ -262,10 +291,30 @@
 
     <aside class="post-toc-pos post-toc-top" id="post-toc">
         <nav class="post-toc-wrap">
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#此模块和评论任正在建设中…"><span class="post-toc-text">此模块和评论任正在建设中….</span></a></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#一、环境搭建"><span class="post-toc-text">一、环境搭建</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#二、利用"><span class="post-toc-text">二、利用</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#1-找出Coummunity-Strings"><span class="post-toc-text">1.找出Coummunity Strings</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#三、参考链接"><span class="post-toc-text">三、参考链接</span></a></li></ol>
         </nav>
     </aside>
     
+
+<nav id="article-nav">
+  
+    <a href="/2018/05/18/ms17-010-psexec/" id="article-nav-newer" class="article-nav-link-wrap">
+
+      <span class="article-nav-title">
+        <i class="fa fa-hand-o-left" aria-hidden="true"></i>
+        
+          ms17_010_psexec
+        
+      </span>
+    </a>
+  
+  
+    <a href="/2018/05/15/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <span class="article-nav-title">Hello World</span>
+      <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+    </a>
+  
+</nav>
 
 
 
